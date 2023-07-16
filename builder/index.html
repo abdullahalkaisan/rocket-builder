@@ -17,6 +17,16 @@
     .accordionCustomNumberStyle{
       min-width: 30px; display: flex; justify-content: center; align-items: center;
     }
+
+    .downloadBtn{
+      background-color: #646cff;
+    }
+
+    .downloadBtn:hover,.downloadBtn:active {
+      background-color: #535bf2;
+    }
+
+
   </style>
 
 
@@ -27,33 +37,259 @@
       <div class="col">
         <div class="row d-flex align-items-center p-3 border-bottom">
           <div class="col">Ads</div>
-          <div class="col">
+          <div class="col text-end">
             <h6>
               <strong>index.html</strong>
             </h6>
           </div>
-          <div class="col d-flex justify-content-between">
-            <button type="button" class="btn btn-dark btn-sm">Save</button>
-            <button type="button" class="btn btn-primary btn-sm">Download Project</button>
-            <button type="button" class="btn btn-outline-dark btn-sm d-flex align-items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
-                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
-              </svg>
-              <span class="px-2">
+          <div class="col-6 d-flex justify-content-end ">
+            <button type="button" class="btn btn-dark btn-sm" style="margin-right: 5px;">Save</button>
+            
+            <button type="button" class="btn btn-primary btn-sm downloadBtn" style="margin-right: 5px;">Download Project</button>
+            
+            
+            <button type="button" class="btn btn-outline-dark btn-sm d-flex align-items-center" >
+                <i class="fa-solid fa-eye"></i>
+              <span style="padding-left: 5px;">
                 Preview
               </span>
             </button>
           </div>
         </div>
-        <div class="row">
-          <div class="col">asdfsd</div>
-          <div class="col">sdfasdf</div>
+        <div class="row overflow-auto ">
+          <div class="col-3 border-end "  style="width: 250px;">
+          
+
+
+            <div class="border d-flex align-items-center rounded  my-2">
+
+              <span class="p-1 px-2 m-1 rounded border text-secondary" style="background-color: #f1f1f1;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
+                  <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/>
+                </svg>
+              </span>
+
+
+              <div class="d-flex flex-column py-2">
+                <h6 class="text-secondary m-0" style="font-size: 13px;">
+                  Need more options?
+                </h6>
+                <h6 class="text-primary m-0" style="font-size: 13px; color: #535bf2;">
+                  Let us know what you need.
+                </h6>
+              </div>
+
+          </div>
+          </div>
+          
+          <div class="col">
+
+            <div class="row text-center my-3">
+              <div class="col">
+                <i class="fa-solid fa-plus fs-4 text-secondary"></i>
+              </div>
+            </div>
+
+            <div class="row text-center">
+              <div class="col text-secondary">
+                <p>
+                  Start creating your template by dragging elements from right
+                  <i class="fa-solid fa-arrow-right text-secondary"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="row ">
+              <div class="col link-secondary">© 2023.</div>
+              <div class="col d-flex justify-content-end">
+                <a href="" class="link-secondary text-decoration-none px-2">Blog</a>
+                <a href="" class="link-secondary text-decoration-none px-2">License</a>
+              </div>
+            </div>
+          </div>
         </div>
 
 
       </div>
-      <div class="col-3 bg-danger">asdfasdf</div>
+      <div class="col-3 border p-0 m-0 " style="width: 250px;">
+        <div>
+          <ul class="nav nav-tabs p-0 m-0" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link p-1 rounded-0 text-secondary"  id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid" type="button" role="tab" aria-controls="grid" aria-selected="true">Grid</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link p-1 rounded-0 text-secondary active"  id="components-tab" data-bs-toggle="tab" data-bs-target="#components" type="button" role="tab" aria-controls="components" aria-selected="false">Components</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link p-1 rounded-0 text-secondary "  id="editor-tab" data-bs-toggle="tab" data-bs-target="#editor" type="button" role="tab" aria-controls="editor" aria-selected="false">Editor</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link p-1 rounded-0 text-secondary"  id="page-tab" data-bs-toggle="tab" data-bs-target="#page" type="button" role="tab" aria-controls="page" aria-selected="false">Pages</button>
+            </li>
+          </ul>
+          
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade " id="grid" role="tabpanel" aria-labelledby="grid-tab">Grid area</div>
+            
+            <!-- tab components items  -->
+            <div class="tab-pane fade show active" id="components" role="tabpanel" aria-labelledby="components-tab">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+    
+                <!-- one Cards -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      <span>
+                        Cards
+                      </span>
+                      <span class="border rounded-pill p-1 mx-2 accordionCustomNumberStyle" >10</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
+                </div>
+    
+    
+                <!-- two Charts -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      <span>
+                        Charts
+                      </span>
+                      <span class="border rounded-pill p-1 mx-2 accordionCustomNumberStyle"  >8</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  </div>
+                </div>
+    
+    
+              <!-- three Components -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      <span>
+                        Components
+                      </span>
+                      <span class="border rounded-pill p-1 mx-2 accordionCustomNumberStyle" >9</span>
+    
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+    
+    
+              <!-- four Forms -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                      <span>
+                        Forms
+                      </span>
+                      <span class="border rounded-pill p-1 mx-2 accordionCustomNumberStyle" >2</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+    
+    
+    
+    
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                      <span>
+                        Headers
+                      </span>
+                      <span class="border rounded-pill p-1 mx-2 accordionCustomNumberStyle" >1</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+    
+    
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-headingSix">
+                      <span>
+                        Tables
+                      </span>
+                      <span class="border rounded-pill p-1 mx-2 accordionCustomNumberStyle" >6</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+    
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      <span>
+                        Tables
+                      </span>
+                      <span class="border rounded-circle p-1 mx-2 accordionCustomNumberStyle" >6</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>            
+                
+    
+    
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      <span>
+                        Typography
+                      </span>
+                      <span class="border rounded-circle p-1  mx-2 accordionCustomNumberStyle" >8</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+    
+    
+    
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      <span>
+                        Data-Integration 
+                        <span class="badge bg-dark mx-2">Beta</span>
+                      </span>
+                      <span class="border rounded-circle p-1 mx-2 accordionCustomNumberStyle" >1</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+    
+    
+    
+              </div>
+            </div>
+    
+    
+    
+            <div class="tab-pane fade" id="editor" role="tabpanel" aria-labelledby="editor-tab">.this</div>
+            <div class="tab-pane fade" id="page" role="tabpanel" aria-labelledby="page-tab">.this is klasjdlfjs..</div>
+          </div>
+        </div>
+      </div>
     </div>
 
 
