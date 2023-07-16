@@ -1,0 +1,243 @@
+  <div id="app"></div>
+
+  <div id="layout" style="display: none;">
+
+    <div class="container-fluid">
+
+      <!-- Navigation -->
+      <div class="row" id="builder-navigation">
+
+        <div class="row justify-content-md-center">
+          <div class="col col-lg-2">
+            <button id="action_clear" type="button" class="btn btn-secondary">clear</button>
+          </div>
+          <div class="col col-lg-2">
+            <button id="action_save" type="button" class="btn btn-secondary">save</button>
+          </div>
+          <div class="col col-lg-2">
+            <button id="action_restore" type="button" class="btn btn-secondary">restore</button>
+          </div>
+          <div class="col col-lg-2">
+            <button id="action_undo" type="button" class="btn btn-secondary">undo</button>
+          </div>          
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- BUILDER -->
+    <div class="row" id="builder-container">
+
+
+
+
+
+
+
+      
+      
+
+
+
+      <!-- Components -->
+      <div class="col builder-components" id="builder-components">
+
+        <div>
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link p-0" style="color: #333;" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid" type="button" role="tab" aria-controls="grid" aria-selected="true">Grid</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link p-0 active" style="color: #333;" id="components-tab" data-bs-toggle="tab" data-bs-target="#components" type="button" role="tab" aria-controls="components" aria-selected="false">Components</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link p-0 " style="color: #333;" id="editor-tab" data-bs-toggle="tab" data-bs-target="#editor" type="button" role="tab" aria-controls="editor" aria-selected="false">Editor</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link p-0" style="color: #333;" id="page-tab" data-bs-toggle="tab" data-bs-target="#page" type="button" role="tab" aria-controls="page" aria-selected="false">Page</button>
+            </li>
+          </ul>
+          
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade " id="grid" role="tabpanel" aria-labelledby="grid-tab">this is klasjdlfjs</div>
+            
+            <!-- tab components items  -->
+            <div class="tab-pane fade show active" id="components" role="tabpanel" aria-labelledby="components-tab">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+    
+                <!-- one Cards -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      <span>
+                        Cards
+                      </span>
+                      <span class="border rounded-pill p-1 mx-2 accordionCustomNumberStyle" >10</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
+                </div>
+    
+    
+                <!-- two Charts -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      <span>
+                        Charts
+                      </span>
+                      <span class="border rounded-pill p-1 mx-2 accordionCustomNumberStyle"  >8</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  </div>
+                </div>
+    
+    
+              <!-- three Components -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      <span>
+                        Components
+                      </span>
+                      <span class="border rounded-pill p-1 mx-2 accordionCustomNumberStyle" >9</span>
+    
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+    
+    
+              <!-- four Forms -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                      <span>
+                        Forms
+                      </span>
+                      <span class="border rounded-pill p-1 mx-2 accordionCustomNumberStyle" >2</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+    
+    
+    
+    
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                      <span>
+                        Headers
+                      </span>
+                      <span class="border rounded-pill p-1 mx-2 accordionCustomNumberStyle" >1</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+    
+    
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-headingSix">
+                      <span>
+                        Tables
+                      </span>
+                      <span class="border rounded-pill p-1 mx-2 accordionCustomNumberStyle" >6</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+    
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      <span>
+                        Tables
+                      </span>
+                      <span class="border rounded-circle p-1 mx-2 accordionCustomNumberStyle" >6</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>            
+                
+    
+    
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      <span>
+                        Typography
+                      </span>
+                      <span class="border rounded-circle p-1  mx-2 accordionCustomNumberStyle" >8</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+    
+    
+    
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      <span>
+                        Data-Integration 
+                        <span class="badge bg-dark mx-2">Beta</span>
+                      </span>
+                      <span class="border rounded-circle p-1 mx-2 accordionCustomNumberStyle" >1</span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+    
+    
+    
+              </div>
+            </div>
+    
+    
+    
+            <div class="tab-pane fade" id="editor" role="tabpanel" aria-labelledby="editor-tab">.this is klasjdlfjs..</div>
+            <div class="tab-pane fade" id="page" role="tabpanel" aria-labelledby="page-tab">.this is klasjdlfjs..</div>
+          </div>
+        </div>
+
+
+
+      </div>
+      
+      <!-- Current Page -->
+      <div class="col-8" id="builder-content">
+        <div id="dropzone" class="dropzone">dropzone</div>
+      </div>
+
+      <!-- PROPS -->
+      <div class="col" id="builder-props">
+        <div class="row" id="builder-props-title"></div>
+        <div class="row" id="builder-props-content"></div>
+        <div class="row" id="builder-props-attribute"></div>
+      </div>
+      
+    </div>
+
+  </div>
+  </div>

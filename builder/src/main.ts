@@ -1,4 +1,4 @@
-import './style.css'
+// import './style.css' 
 import { onDragStart, onDragEnd, onDragOver, onDrop, onClear, onSave, onRestore, setupGlobalEvents} from './dnd.ts'
 
 //fetch('http://127.0.0.1:5000/kits/bs5/div.html') 
